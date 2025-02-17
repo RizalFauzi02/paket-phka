@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+header, footer {
+    text-align: center;
+    padding: 11px;
+    border-top: none; /* Menghapus garis di atas footer */
+    color: rgb(0, 0, 0);
+}
+
+footer a{
+    color: #e6e6e6;
+}
+
+.image-container {
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #333;
+    background-color: #fff;
+    width: auto; /* Ukuran otomatis berdasarkan gambar */
+    height: auto; /* Ukuran otomatis berdasarkan gambar */
+}
+
+.image-container img {
+    display: block; /* Menghilangkan ruang kosong di bawah gambar */
+    width: 100%; /* Gambar akan menyesuaikan lebar kontainer */
+    height: auto; /* Menjaga rasio aspek gambar */
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .image-container {
+        margin: 5px;
+        padding: 5px;
+        width: 90%; /* Lebar kontainer responsif di layar kecil */
+    }
+}
